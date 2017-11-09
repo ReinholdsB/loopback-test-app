@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/typescript/bin/tsc",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/ReinholdsB/loopback-test-app/issues"
   },
-  "homepage": "https://github.com/ReinholdsB/loopback-test-app#readme"
+  "homepage": "https://github.com/ReinholdsB/loopback-test-app#readme",
+  "devDependencies": {
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "@loopback/core": "^4.0.0-alpha.20"
+  }
 }
